@@ -48,9 +48,13 @@
     color: #523A28;
 }
 
+/* -------------------------------
+----------- Début du Main --------------
+------------- Carousel -------------- */
+
+
 .carousel {
     position: relative;
-    z-index: 9;
     width: 100%;
 }
 
@@ -59,7 +63,6 @@
 }
 
 .carousel img {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -73,6 +76,15 @@
     font-family: 'Playfair Display', serif;
 }
 
+.wildlife h1 {
+    color: #c88819;
+    font-weight: bolder;
+}
+
+/* ------------------------
+-------- Fin Carousel ---------
+-------- Créa Slogan --------- */
+
 .slogan {
     background: rgba(0, 0, 0, 0.948)
 }
@@ -85,4 +97,30 @@
     font-size: 3em;
     font-weight: bold;
     font-family: 'Bacasime Antique', serif;
+}
+
+/* ----------------------
+--------- Fin Slogan ---------
+--------- Début article -------- */
+
+.art-title {
+    font-family: 'Bacasime Antique', serif;
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+}
+
+.art-title span {
+    color: #D0B49F;
+}
+
+
+
+.art-resume {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.art-resume .special-text {
+    color: #D0B49F;
 }

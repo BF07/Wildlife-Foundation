@@ -15,61 +15,66 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg px-5">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="Images/logo-1.png" alt="" style="width: 4vw;"></a>
-              <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-lg-0 px-5 gap-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Accueil</a>
-                      </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Qui sommes-nous ?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Nos actions</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Nos missions</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Faire un don</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contactez-nous</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="#">
+                    <img src="Images/logo-1.png" alt="" style="width: 4vw;">
+                </a>
+                <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0 px-5 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Qui sommes-nous ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nos actions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nos missions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Faire un don</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactez-nous</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     
     <main>
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="Images/lion-lionceau.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="Images/troupeau-elephants.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="Images/rhino.jpg" class="d-block w-100" alt="...">
-                </div>
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="Images/lion-lionceau.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="Images/troupeau-elephants.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/rhino.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
+          </div>
             <div class="wildlife">
-                <h1>Wildlife Foundation</h1>
-                <span>Engagée corps et âme pour préserver la faune sauvage namibienne et défendre un avenir durable pour nos
-                    précieux animaux.</span>
+                <h1 class="text-uppercase text-center mx-5">Wildlife Foundation</h1>
+                <p class="mx-5 text-center">Engagée corps et âme pour préserver la faune sauvage namibienne et défendre un avenir durable pour nos
+                    précieux animaux.</p>
             </div>
         </div>
 
@@ -80,7 +85,97 @@
                     <p class="txt-wild text-uppercase" style="color: rgb(118, 102, 84);">Préserver</p>   
             </div>
         </div>
+
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-6 h-50">
+                    <img src="Images/leopard.jpg" alt="" class="w-100 h-50 my-5 px-5">
+                </div>
+                <div class="col-12 col-md-6 my-5 px-5">
+                    <h2 class="art-title">Un investissement <span class="special-text">inébranlable</span></h2>
+                    <p class="art-resume py-3">La Namibie, pays d'Afrique australe renommé pour sa <span class="special-text">faune sauvage</span> exceptionnelle, bénéficie de l'engagement sans
+                        relâche de <strong class="fst-italic">Wildlife Foundation</strong> pour la <span class="special-text">préservation</span> de ses espèces animales emblématiques. Depuis sa
+                        création il y a plus de deux décennies, l'organisation s'est consacrée à la sauvegarde des animaux sauvages en
+                        Namibie, en mettant en place des initiatives <span class="special-text">innovantes</span> et en collaborant avec les communautés locales.
+                        <br>
+                        <strong class="fst-italic">Wildlife Foundation</strong> se concentre sur plusieurs aspects clés de la <span class="special-text">protection</span> des animaux sauvages en Namibie. L'une de
+                        ses principales missions est de lutter contre le braconnage, une menace persistante pour de nombreuses espèces
+                        vulnérables. L'association travaille en étroite collaboration avec les autorités compétentes et les communautés locales
+                        pour renforcer les mesures de lutte contre le braconnage, en <span class="special-text">investissant</span> dans des patrouilles anti-braconnage et en
+                        fournissant une formation spécialisée aux gardes forestiers. Grâce à ces efforts, des progrès significatifs ont été
+                        réalisés dans la réduction du braconnage et la protection des espèces en danger.
+                        <br>
+                        Outre la lutte contre le braconnage, <strong class="fst-italic">Wildlife Foundation</strong> s'engage également dans la préservation des habitats naturels.
+                        L'association travaille en partenariat avec les autorités namibiennes pour <span class="special-text">identifier</span> et <span class="special-text">protéger</span> les zones essentielles
+                        à la survie des animaux sauvages. Des programmes de <span class="special-text">restauration</span> des écosystèmes sont mis en œuvre, notamment la
+                        régénération des zones de pâturage et la création de corridors de migration, permettant aux animaux de se déplacer en
+                        toute sécurité dans leur habitat naturel.
+                        </p>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <a href="index.html" class="mb-4">
+                            <img src="Images/logo-1.png" alt="" style="width: 4vw;">
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nisi temporibus non est ipsam maxime maiores.
+                        </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">À propos</h3>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Notre histoire</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Notre équipe</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Nos partenaires</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Contactez-nous</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Notre travail</h3>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Nos actions</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Nos missions</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Nos besoins</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Nous soutenir</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Informations</h3>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Devenir bénévole</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Newsletter</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">FAQ</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Liens externes</a>
+                    </p>
+                </div>
+            </div>
+
+            <a href="#" class="text-decoration-none" style="color: black;">Foire aux questions</a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
