@@ -79,8 +79,27 @@
 .wildlife h1 {
     color: #c88819;
     font-weight: bolder;
+    transform: translateY(-1000%);
+    animation: title-appearance 1s 0.2s forwards;
 }
 
+.wildlife p {
+    transform: translatex(-1000%);
+    animation: text-appearance 1s 0.3s forwards;
+}
+
+
+@keyframes title-appearance {
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes text-appearance {
+    100% {
+        transform: translateX(0%);
+    }
+}
 /* ------------------------
 -------- Fin Carousel ---------
 -------- Créa Slogan --------- */
@@ -94,7 +113,7 @@
 }
 
 .txt-wild {
-    font-size: 3em;
+    font-size: clamp(20px, 6vw, 120px);
     font-weight: bold;
     font-family: 'Bacasime Antique', serif;
 }
@@ -102,6 +121,10 @@
 /* ----------------------
 --------- Fin Slogan ---------
 --------- Début article -------- */
+
+.art-image {
+    height: 80vh;
+}
 
 .art-title {
     font-family: 'Bacasime Antique', serif;
@@ -124,3 +147,47 @@
 .art-resume .special-text {
     color: #D0B49F;
 }
+
+/* -------------
+-- Apparition au défilement --
+----------------- */ 
+
+.reveal-loaded [class*= "reveal-"] {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-loaded .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.reveal-loaded .reveal-2 {
+    transition-delay: .1s;
+}
+
+.reveal-loaded .reveal-3 {
+    transition-delay: .2s;
+}
+
+.reveal-loaded .reveal-4 {
+    transition-delay: .3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [class*= "reveal-"] {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    [class*= "reveal-"] {
+        transition-delay: 0s;
+        transition-duration: 0s;
+    }
+}
+
+/* ------------
+-- Fin apparition au défilement --
+------------------ */
+
