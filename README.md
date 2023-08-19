@@ -1,8 +1,7 @@
-#titre Évaluation d'entraînement - Projet Wildlife Foundation
+# Training Evaluation - Wildlife Foundation Project
 
-##titre Explications détaillés
-Dans le cadre de ma formation, il m'est demandé de créer le site internet d'une association, qu'elle soit réelle ou fictive.  
-J'ai choisi d'imaginer une association oeuvrant pour la protection des animaux sauvages en Namibie. 
+## Detailed explanations
+As part of my training, I was asked to create a website for an association, whether real or fictional.
+I chose to imagine an association working to protect wild animals in Namibia.
 
-Actuellement, et pour répondre aux attendus de l'évaluation, mon site compte une page d'accueil.
- 
+At Present, and to meet the requirements of the evaluation, my site as a home page.
